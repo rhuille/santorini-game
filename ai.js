@@ -97,9 +97,10 @@ ai = function() {
 
             if (d3.select(this_).attr('level')=='3'){
             console.log('You lost ')
-            d3.select('#turn').html('You lost  😱 ')
+            d3.select('#turn').html('You lost  😱 Want to play again ?')
             d3.select('#instructions').html('&nbsp')
             d3.select('#shortInstructions').html(' ')
+            d3.select('#button').html('&#x2694;').on('click', load)
             state='ended'
             return;
             }
