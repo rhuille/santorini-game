@@ -41,13 +41,14 @@ function loadBoard() {
     .attr('possiblemove', '')
 
   boardSizing();
+  window.addEventListener("resize", boardSizing);
 }
 
 function boardSizing() {
 
   var windowHeight = window.innerHeight,
       windowWidth = window.innerWidth,
-      titleHeight = d3.select('#header').node().getBoundingClientRect().height,
+      titleHeight = d3.select('#header').node().getBoundingClientRect().height+d3.select('#bar').node().getBoundingClientRect().height,
       boardSize = d3.min([windowHeight - titleHeight,  windowWidth])*0.8;
   
   d3.select("#board")
@@ -56,11 +57,14 @@ function boardSizing() {
 
 }
 
-window.addEventListener("resize", boardSizing);
+
 
 
 //
 d3.select('#button').on('click', load)
+
+d3.select('.navbar-btn').on('click', load)
+
 
 function loadGame(){
   console.log('load')

@@ -3,15 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Santorini</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+    <div id='bar'>
+        <nav  class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <a href="https://www.youtube.com/watch?v=IBfGD8aq7Is" target="_blank" alt="What is Santorini ?">
+                    <img src="santoriniLogo.png">
+                </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                <li><button class="btn btn-default navbar-btn"> Load game </button></li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Parameters
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">To come</a></li>
+                    <li><a href="#">First player</a></li>
+                    <li><a href="#">...</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gods
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">To come</a></li>
+                    <li><a href="#">Random</a></li>
+                    <li><a href="#">Zeus</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="https://roxley.com/wp-content/uploads/2016/08/Santorini-Rulebook-Web-2016.08.14.pdf" target="_blank">Rulebook</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
     <center>
         <div id='header'>
-            <img src="santoriniLogo.png" >
-
-            
             <p> 
                 <span id='turn'> Let's play Santorini against an AI  </span> 
                 <span id='shortInstructions'> &nbsp </span> 
@@ -19,7 +55,6 @@
                 <br>
                 <span id='instructions'> &nbsp </span>
             </p>
-            
         </div>
         <div id="board"> </div>
     </center>

@@ -10,6 +10,10 @@
   position: relative;
 }
 
+.square:hover {
+  background-color: #7ba050;
+}
+
 .worker {
   border-radius: 50%;
   width: 50%;
@@ -25,7 +29,7 @@
 }
 
 .ai {
-  background: gray;
+  background: #800033;
 }
 
 .selected{
@@ -79,6 +83,10 @@
   /* border: 10px solid #ffffff; */
 }
 
+#header {
+  font-size: 1.5em;
+}
+
 #instructions {
   opacity: 0;
 }
@@ -88,10 +96,14 @@
 }
 
 img{
-  width: 15%; 
+  width: 30%; 
 }
 
 body {
-  background-color: #ccebff;
+  /* background-color: #ccebff; */
   font-family: "Comic Sans MS", cursive, sans-serif	;
+}
+
+#bar {
+  margin: 1%
 }
