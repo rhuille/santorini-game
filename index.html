@@ -1,9 +1,31 @@
+<!DOCTYPE html>
 <html>
-<header>
+<head>
+    <meta charset="UTF-8">
     <title>Santorini</title>
-</header>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
 <body>
-Hello world
+    <center>
+        <div id='header'>
+            <img src="santoriniLogo.png" >
+
+            
+            <p> 
+                <span id='turn'>Your turn</span> 
+                <span id='shortInstructions'>(Beginning)</span> 
+                <span id= 'button'> &#x25BE; </span>
+                <br>
+                <span id='instructions'> Select the square where to place your first worker </span>
+            </p>
+            
+        </div>
+        <div id="board"> </div>
+    </center>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="ai.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

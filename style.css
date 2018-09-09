@@ -1,0 +1,97 @@
+#board {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto ;
+  background-color: #93b775;
+}
+
+.square {
+  background-color: #93b775;
+  border: 1px solid #ffffff;
+  position: relative;
+}
+
+.worker {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.human {
+  background: #666699;
+}
+
+.ai {
+  background: gray;
+}
+
+.selected{
+  border: 1px solid yellow;
+}
+
+.level1 {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #ffffff;
+  /* border: 10px solid #ffffff; */
+}
+
+.level2 {
+  border-radius: 10%;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #d9d9d9;
+  /* border: 10px solid #ffffff; */
+}
+
+.level3 {
+  border-radius: 10%;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #ffffff;
+  /* border: 10px solid #ffffff; */
+}
+
+.level4 {
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: blue;
+  /* border: 10px solid #ffffff; */
+}
+
+#instructions {
+  opacity: 0;
+}
+
+#button {
+  cursor: pointer;
+}
+
+img{
+  width: 15%; 
+}
+
+body {
+  background-color: #ccebff;
+  font-family: "Comic Sans MS", cursive, sans-serif	;
+}
